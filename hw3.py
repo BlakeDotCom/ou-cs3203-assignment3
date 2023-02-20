@@ -11,8 +11,9 @@ def multiplyArray(numbers):
     return ret
 
 def reverseArray(numbers):
-    new = numbers.reverse()
-    return new
+    newlst = list(numbers)
+    newlst.reverse()
+    return newlst
 
 def main():
     numbers = []
@@ -20,6 +21,7 @@ def main():
         numbers.append(int(input("Enter a number: ")))
     print(sumArray(numbers))
     print(multiplyArray(numbers))
+    print(reverseArray(numbers))
 
 
 if __name__ == "__main__":
