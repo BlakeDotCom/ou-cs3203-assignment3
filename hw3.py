@@ -10,6 +10,10 @@ def multiplyArray(numbers):
         ret = ret * x
     return ret
 
+def reverseArray(numbers):
+    new = numbers.reverse()
+    return new
+
 def main():
     numbers = []
     for x in range(5):
